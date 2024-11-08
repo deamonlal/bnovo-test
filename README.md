@@ -4,7 +4,7 @@
 
 ## Требования
 
-- PHP >= 8.3
+- PHP >= 8.1
 - Composer
 - Docker
 - Docker Compose
