@@ -20,7 +20,20 @@
    cd bnovo-test
    ```
 
-2. **Запустите Sail:**
+2. **Установите зависимости:**
+
+   ```bash
+   composer install
+   ```
+
+3. **Запустите скрипт настройки .env файла:**
+
+   ```bash
+   ./setupEnv.sh
+   ```
+
+
+4. **Запустите Sail:**
 
    ```bash
    ./vendor/bin/sail up
@@ -28,13 +41,7 @@
 
    Это будет запускать контейнеры Docker, необходимые для работы приложения.
 
-3. **Установите зависимости:**
-
-   ```bash
-   ./vendor/bin/sail composer install
-   ```
-
-4. **Запустите миграции:**
+5. **Запустите миграции:**
 
    ```bash
    ./vendor/bin/sail artisan migrate
